@@ -1,3 +1,5 @@
+
+
 scoreboard players add .position gameData 1
 execute if score .gameClockS gameData matches ..9 run tellraw @a [{"color":"aqua","selector":"@s"},{"text":" has completed the course in ","color":"yellow"},{"score":{"name":".gameClockM","objective":"gameData"},"color":"red"},{"text":":0","color":"red"},{"score":{"name":".gameClockS","objective":"gameData"},"color":"red"}]
 execute if score .gameClockS gameData matches 10.. run tellraw @a [{"color":"aqua","selector":"@s"},{"text":" has completed the course in ","color":"yellow"},{"score":{"name":".gameClockM","objective":"gameData"},"color":"red"},{"text":":","color":"red"},{"score":{"name":".gameClockS","objective":"gameData"},"color":"red"}]

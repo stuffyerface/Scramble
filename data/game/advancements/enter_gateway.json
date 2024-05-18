@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "In Gateway": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:end_gateway"
+      }
+    }
+  },
+  "rewards": {
+    "function": "game:playerfinish"
+  }
+}
